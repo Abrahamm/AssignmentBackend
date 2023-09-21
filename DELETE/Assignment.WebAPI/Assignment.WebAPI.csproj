@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Assignment.Application\Assignment.Application.csproj" />
+    <ProjectReference Include="..\Assignment.Infrastructure\Assignment.Infrastructure.csproj" />
+    <ProjectReference Include="..\Assignment.Persistence\Assignment.Persistence.csproj" />
+    <ProjectReference Include="..\Assignment.Shared\Assignment.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
